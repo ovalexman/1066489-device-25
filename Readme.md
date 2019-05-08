@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/25/user/1066489).
-* Наставник: `Неизвестно`.
+* Студент: [Александр Овчаров](https://up.htmlacademy.ru/htmlcss/25/user/1066489).
+* Наставник: [Сергей Попенко](https://htmlacademy.ru/profile/id66243).
 
 ---
 
