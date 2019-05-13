@@ -2,17 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Интернет-магазин гаджетов "Девайс"</title>
   </head>
   <body>
     <header class="main-header">
+      <tupe="search">Поиск по сайту</tupe>
+      <a class="main-header-logo">
+       <img src="img/index-logo.svg" width="100" height="50" alt="Логотип интернет-магазина Девайс">
+     </a>
       <nav class="main-navigatoin">
-        <a class="main-header-logo" href="index.html">
-         <img src="img/index-logo.svg" width="100" height="50" alt="Логотип интернет-магазина "Девайс"">
-       </a>
-        <ul class="user-navigatoin">
-          <li class="search-link">Поиск по сайту</li>
-          <li class="login-link">Вход</li>
+       <ul class="user-navigatoin">
+          <li class="user-cabinet"><a href="#">Валентин Петухов</a></li>
+          <li class="unlogin-link"><a href="#">Выйти</a></li>
+
           <li class="contrast-link">Сравнение</li>
           <li class="basket-link">Корзина</li>
         </ul>
@@ -30,9 +32,11 @@
      <ul class="breadcrumbs">
        <li><a href="index.html">Главная</a></li>
        <li><a href="catalog.html">Каталог товаров</a></li>
-       <li><a href="2.html">Моноподы для селфи</a></li>
+       <li><a href="#">Моноподы для селфи</a></li>
+
      </ul>
     <section class="filters">
+<!-- Фильтр выполнен неправильно. Это форма. Пока его верстать не нужно. Это будет на лекции про формы -->
      <ul class="color-filter">
        <li><span class="black">Черный</span></li>
        <li><span class="white">Белый</span></li>
@@ -46,52 +50,98 @@
     </ul>
     <span class="button">Показать</span>
     </section>
-    <section class="item-cards">
-      <div class="item-card">
-        <img src="img1.svg" width="50" height="100" alt="Любительская селфи-палка">
-         <h3>Любительская селфи-палка  500 руб.</h3>
-      </div>
-      <div class="item-card">
-        <img src="img2.svg" width="50" height="100" alt="Профессиональная селфи-палка">
-         <h3>Профессиональная селфи-палка  1500 руб.</h3>
-      </div>
-      <div class="item-card">
-        <img src="img3.svg" width="50" height="100" alt="Непотопляемая селфи-палка">
-         <h3>Непотопляемая селфи-палка  2500 руб.</h3>
-      </div>
-      <div class="item-card">
-        <img src="img4.svg" width="50" height="100" alt="Селфи-палка "Следуй за мной"">
-         <h3>Селфи-палка "Следуй за мной  4900 руб.</h3>
-      </div>
-    </section>
-   </main>
+    <ul class="item-cards">
+
+     <li class="good-item">
+       <p class="good-img">
+        <img src="" alt="">
+       </p>
+       <div class="good-description">
+        <h3 class="good-name">Любительская селфи-палка</h3>
+         <p class="good-price">500 руб</p>
+       </div>
+       <div class="good-popup">
+        <button class="button">в корзину</button>
+        <button class="button-compare">Добавить к сравнению</button>
+       </div>
+     </li>
+
+     <li class="good-item">
+       <p class="good-img">
+        <img src="" alt="">
+       </p>
+       <div class="good-description">
+        <h3 class="good-name">Профессиональная селфи-палка</h3>
+         <p class="good-price">1500 руб</p>
+       </div>
+       <div class="good-popup">
+        <button class="button">в корзину</button>
+        <button class="button-compare">Добавить к сравнению</button>
+       </div>
+     </li>
+     <li class="good-item">
+       <p class="good-img">
+        <img src="" alt="">
+       </p>
+       <div class="good-description">
+        <h3 class="good-name">Непотопляемая селфи-палка</h3>
+         <p class="good-price">2500 руб</p>
+       </div>
+       <div class="good-popup">
+        <button class="button">в корзину</button>
+        <button class="button-compare">Добавить к сравнению</button>
+       </div>
+     </li>
+     <li class="good-item">
+       <p class="good-img">
+        <img src="" alt="">
+       </p>
+       <div class="good-description">
+        <h3 class="good-name">Селфи-палка "Следуй за мной"</h3>
+         <p class="good-price">4900 руб</p>
+       </div>
+       <div class="good-popup">
+        <button class="button">в корзину</button>
+        <button class="button-compare">Добавить к сравнению</button>
+       </div>
+     </li>
+   </ul>
+ </main>
+
    <footer class="main-footer">
-     <p class="footer-navigatoin">
-       <nav class="navigatoin">
-         <a class="main-footer-logo">
+     <div class="footer-navigatoin">
+         <a class="main-footer-logo" href="#">
           <img src="img/index-logo.svg" width="100" height="50" alt="Логотип интернет-магазина "Девайс"">
         </a>
          <ul class="user-navigatoin">
-           <li class="login-link">Вход</li>
-           <li class="contrast-link">Сравнение</li>
-           <li class="basket-link">Корзина</li>
+           <li class="login-link" href="#">Войти</li>
+           <li class="contrast-link" href="#">Сравнить</li>
+           <li class="basket-link" href="#">Корзина</li>
          </ul>
-         <b>г. Москва, ул. Строителей, 15</b>
+      </div>
+      <div class="contacts">
+         <p class="address">г. Москва, ул. Строителей, 15</p>
          <ul class="service-navigation">
            <li><a href="1.html">Доставка</a></li>
            <li><a href="2.html">Гарантия</a></li>
            <li><a href="3.html">Контакты</a></li>
          </ul>
-         <b>Тел.: +7 (495) 495-95-95</b>
-       </nav>
-     </p>
+         <p class="phone">Тел.: +7 (495) 495-95-95</p>
+       </div>
+
      <div class="footer-social">
        <ul>
          <li><a class="social-button" href="#"></a>Фейсбук</li>
          <li><a class="social-button" href="#">Инстаграм</a></li>
          <li><a class="social-button" href="#"></a>Твиттер</li>
        </ul>
+       <p class="logo-htmlacademy">
+         <a href="htmlacademy.ru">
+          <img src="htmlacademy-logo.svg" width="10" height="10" alt="Логотип HTML-академии">
+         </a>
+       </p>
      </div>
    </footer>
+
   </body>
 </html>
