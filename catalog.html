@@ -6,6 +6,8 @@
   </head>
   <body>
     <header class="main-header">
+<!-- Основные замечания по шапке такие же, как в индексе -->
+
       <nav class="main-navigatoin">
         <a class="main-header-logo" href="index.html">
          <img src="img/index-logo.svg" width="100" height="50" alt="Логотип интернет-магазина "Девайс"">
@@ -13,6 +15,8 @@
         <ul class="user-navigatoin">
           <li class="search-link">Поиск по сайту</li>
           <li class="login-link">Вход</li>
+<!-- В каталоге шапка немного другая. Смотри макет - пользователь залогинелся. И появилась кнопка "Выход" -->
+
           <li class="contrast-link">Сравнение</li>
           <li class="basket-link">Корзина</li>
         </ul>
@@ -31,8 +35,11 @@
        <li><a href="index.html">Главная</a></li>
        <li><a href="catalog.html">Каталог товаров</a></li>
        <li><a href="2.html">Моноподы для селфи</a></li>
+<!-- Последний пункт хлебных крошек всегда указывает на текущую страницу. То есть ссылка на нее не нужна. Нужно удалить атрибут href у ссылки последнего пункта -->
+
      </ul>
     <section class="filters">
+<!-- Фильтр выполнен неправильно. Это форма. Пока его верстать не нужно. Это будет на лекции про формы -->
      <ul class="color-filter">
        <li><span class="black">Черный</span></li>
        <li><span class="white">Белый</span></li>
@@ -47,9 +54,32 @@
     <span class="button">Показать</span>
     </section>
     <section class="item-cards">
+<!-- Список товаров лучше сделать списком (ul). -->
+
       <div class="item-card">
         <img src="img1.svg" width="50" height="100" alt="Любительская селфи-палка">
+<!-- Тег img нужно оборачивать в блочный элемент (p, div, figure) для ограничения максимальных размеров изображения -->
+
          <h3>Любительская селфи-палка  500 руб.</h3>
+<!-- Название и цену нужно разделить по разным элементам -->
+
+<!-- Отсутствует всплывающий блок (смотри скрытый слой в фотошопе. Его нужно включить http://prntscr.com/nnookr). -->
+
+<!-- Ны выходе должно получится что-то такое:
+<li class="good-item">
+  <p class="good-img">
+    <img src="" alt="">
+  </p>
+  <div class="good-description">
+    <h3 class="good-name">Любительская селфи-палка</h3>
+    <p class="good-price">500 руб</p>
+  </div>
+  <div class="good-popup">
+    <button class="button">в корзину</button>
+    <button class="button-compare">Добавить к сравнению</button>
+  </div>
+</li> -->
+
       </div>
       <div class="item-card">
         <img src="img2.svg" width="50" height="100" alt="Профессиональная селфи-палка">
@@ -66,6 +96,8 @@
     </section>
    </main>
    <footer class="main-footer">
+<!-- Футер токой же, как в индексе -->
+
      <p class="footer-navigatoin">
        <nav class="navigatoin">
          <a class="main-footer-logo">
