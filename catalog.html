@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="main-header">
-      <tupe="search">Поиск по сайту</tupe>
+      <--! здесь будет форма поиска-->
       <a class="main-header-logo">
        <img src="img/logo-device.svg" width="165" height="35" alt="Логотип интернет-магазина Девайс">
      </a>
@@ -14,12 +14,19 @@
        <ul class="user-navigatoin">
           <li class="user-cabinet"><a href="#">Валентин Петухов</a></li>
           <li class="unlogin-link"><a href="#">Выйти</a></li>
-
-          <li class="contrast-link">Сравнение</li>
-          <li class="basket-link">Корзина</li>
+          <li class="contrast-link"><a href="#">Сравнение</li>
+          <li class="basket-link"><a href="#">Корзина</li>
         </ul>
         <ul class="site-navigatoin">
-          <li><a href="catalog.html">Каталог товаров</a></li>
+          <li><button class="modal-open" type="button">Каталог товаров</button></li>
+          <ul class="products-group">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнес браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>
           <li><a href="1.html">Доставка</a></li>
           <li><a href="2.html">Гарантия</a></li>
           <li><a href="3.html">Контакты</a></li>
@@ -34,22 +41,53 @@
        <li><a href="catalog.html">Каталог товаров</a></li>
        <li><a href="#">Моноподы для селфи</a></li>
 
-     </ul>
-    <section class="filters">
-<!-- Фильтр выполнен неправильно. Это форма. Пока его верстать не нужно. Это будет на лекции про формы -->
-     <ul class="color-filter">
-       <li><span class="black">Черный</span></li>
-       <li><span class="white">Белый</span></li>
-       <li><span class="blue">Синий</span></li>
-       <li><span class="red">Красный</span></li>
-       <li><span class="pink">Розовый</span></li>
-     </ul>
-     <ul class="bluetooth-filter">
-       <li><span class="Yes">Да</span></li>
-       <li><span class="No">Нет</span></li>
-    </ul>
-    <span class="button">Показать</span>
-    </section>
+       <h2 class="visually-hidden">Фильтр:</h2>
+        <form class="filter" method="get" action="#">
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Black" id="filter-black" checked>
+                <label for="filter-black">Черный</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="White" id="filter-white">
+                <label for="filter-white">Белый</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Blue" id="filter-blue" checked>
+                <label for="filter-blue">Синий</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Red" id="filter-red">
+                <label for="filter-red">Красный</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
+                <label for="filter-pink">Розовый</label>
+              </li>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth-filter" value="Yes" id="filter-yes">
+                <label for="filter-yes">Есть</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth-filter" value="No" id="filter-no">
+                <label for="filter-no">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">
+            Показать
+          </button>
+        </form>
+      </section>
+
     <ul class="item-cards">
 
      <li class="good-item">
@@ -114,9 +152,9 @@
           <img src="img/logo.svg" width="165" height="35" alt="Логотип интернет-магазина "Девайс"">
         </a>
          <ul class="user-navigatoin">
-           <li class="login-link" href="#">Войти</li>
-           <li class="contrast-link" href="#">Сравнить</li>
-           <li class="basket-link" href="#">Корзина</li>
+           <li><a class="login-link" href="#">Вход</a></li>
+           <li><a class="contrast-link" href="#">Сравнение</a></li>
+           <li><a class="basket-link" href="#">Корзина</a></li>
          </ul>
       </div>
       <div class="contacts">
@@ -131,9 +169,9 @@
 
      <div class="footer-social">
        <ul>
-         <li><a class="social-button" href="#"></a>Фейсбук</li>
+         <li><a class="social-button" href="#">Фейсбук</a></li>
          <li><a class="social-button" href="#">Инстаграм</a></li>
-         <li><a class="social-button" href="#"></a>Твиттер</li>
+         <li><a class="social-button" href="#">Твиттер</a></li>
        </ul>
        <p class="logo-htmlacademy">
          <a href="htmlacademy.ru">

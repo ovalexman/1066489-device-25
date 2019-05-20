@@ -11,9 +11,9 @@
       <a class="main-header-logo">
        <img src="img/logo-device.svg" width="165" height="35" alt="Логотип интернет-магазина Девайс">
        <ul class="user-navigatoin">
-          <li class="login-link"><a href="#">Вход</a></li>
-          <li class="contrast-link"><a href="#">Сравнение</a></li>
-          <li class="basket-link"><a href="#">Корзина</a></li>
+          <li><a class="login-link" href="#">Вход</a></li>
+          <li><a class="contrast-link" href="#">Сравнение</a></li>
+          <li><a class="basket-link" href="#">Корзина</a></li>
        </ul>
      </a>
       <nav class="main-navigatoin">
@@ -59,9 +59,39 @@
            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>проверить работоспособность покупки. Всякое бывает.
         </p>
         <p class="service">
-        <img src="img/map.jpg" width="560" height="222" alt="Карта">
+        <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу ул. Строителей, 15, Москва">
         </p>
-        <a class="button" href="#">Как проехать</a>
+      </section>
+      <section class="modal modal-map">
+       <h2 class="visually-hidden">Как проехать</h2>
+       <p>
+        <img src="img/map.jpg" width="50%" height="" alt="Офис компании по адресу ул. Строителей, 15, Москва">
+       </p>
+       <button class="modal-close" type="button">
+
+         <section class="feedback">
+      <h3>Напишите нам</h3>
+        <p class="appointment-info">Напишите нам</p>
+        <form class="feedback-form" action="#" method="post">
+          <p class="appointment-item">
+            <label for="feedback-name">Ваше имя:</label>
+            <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="feedback-item">
+            <label for="feedback-email">Ваш email</label>
+            <input id="feedback-email" type="email" name="email" value="" placeholder="email@example.com">
+          </p>
+          <p class="feedback-item">
+            <label for="feedback-text">Текст письма</label>
+            <input id="feedback-text" type="text" name="text" value="" placeholder="В свободной форме">
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
+        Закрыть
+      </button>
+     </section>
       </section>
     </main>
     <footer class="main-footer">
@@ -70,9 +100,9 @@
            <img src="img/logo.svg" width="165" height="35" alt="Логотип интернет-магазина "Девайс"">
          </a>
           <ul class="user-navigatoin">
-            <li class="login-link" href="#">Войти</li>
-            <li class="contrast-link" href="#">Сравнить</li>
-            <li class="basket-link" href="#">Корзина</li>
+            <li><a class="login-link" href="#">Вход</a></li>
+            <li><a class="contrast-link" href="#">Сравнение</a></li>
+            <li><a class="basket-link" href="#">Корзина</a></li>
           </ul>
        </div>
        <div class="contacts">
@@ -87,9 +117,9 @@
 
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#"></a>Фейсбук</li>
+          <li><a class="social-button" href="#">Фейсбук</li></a>
           <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#"></a>Твиттер</li>
+          <li><a class="social-button" href="#">Твиттер</li></a>
         </ul>
         <p class="logo-htmlacademy">
           <a href="htmlacademy.ru">
