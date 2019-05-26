@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин гаджетов "Девайс"</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <!-- здесь будет форма поиска -->
-
-      <a class="main-header-logo">
-       <img src="img/logo-device.svg" width="165" height="35" alt="Логотип интернет-магазина Девайс">
-       <ul class="user-navigatoin">
-          <li><a class="login-link" href="#">Вход</a></li>
+      <nav class="main-navigation">
+       <a class="main-header-logo">
+        <img src="img/logo-device.svg" width="165" height="35" alt="Логотип интернет-магазина Девайс">
+        <ul class="user-navigation">
+          <li><a class="login-link" href="#">Войти</a></li>
           <li><a class="contrast-link" href="#">Сравнение</a></li>
           <li><a class="basket-link" href="#">Корзина</a></li>
-       </ul>
-     </a>
-      <nav class="main-navigatoin">
-        <ul class="site-navigatoin">
+        </ul>
+       </a>
+
+       <ul class="site-navigation">
          <li><a href="catalog.html">Каталог товаров</a>
             <ul class="products-group">
               <li><a href="#">Виртуальная реальность</a></li>
@@ -33,10 +34,21 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
+      <form>
+       <input type="search" name="text" placeholder="">
+       <button type="submit" value="Найти">
+     </form>
     </header>
     <main>
       <h1 class="visually-hidden">Интернет-магазин гаджетов "Девайс"</h1>
 <!-- Здесь что-то будет  -->
+      <section class="brands">
+        <ul>
+          <li><img src="#" alt="dji"><li>
+          <li><img src="#" alt="spgadgets"><li>
+          <li><img src="#" alt="GoPro"><li>
+          <li><img src="#" alt="vive"><li>
+        </ul>
       <section class="company info">
         <h3 class="about">О нас</h3>
         <p class="service">
@@ -62,44 +74,14 @@
         <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу ул. Строителей, 15, Москва">
         </p>
       </section>
-      <section class="modal modal-map">
-       <h2 class="visually-hidden">Как проехать</h2>
-       <p>
-        <img src="img/map.jpg" width="50%" height="" alt="Офис компании по адресу ул. Строителей, 15, Москва">
-       </p>
-       <button class="modal-close" type="button">
 
-         <section class="feedback">
-      <h3>Напишите нам</h3>
-        <p class="appointment-info">Напишите нам</p>
-        <form class="feedback-form" action="#" method="post">
-          <p class="appointment-item">
-            <label for="feedback-name">Ваше имя:</label>
-            <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-          </p>
-          <p class="feedback-item">
-            <label for="feedback-email">Ваш email</label>
-            <input id="feedback-email" type="email" name="email" value="" placeholder="email@example.com">
-          </p>
-          <p class="feedback-item">
-            <label for="feedback-text">Текст письма</label>
-            <input id="feedback-text" type="text" name="text" value="" placeholder="В свободной форме">
-          </p>
-          <button class="button" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
-        Закрыть
-      </button>
-     </section>
-      </section>
     </main>
     <footer class="main-footer">
-      <div class="footer-navigatoin">
+      <div class="footer-navigation">
           <a class="main-footer-logo" href="#">
            <img src="img/logo.svg" width="165" height="35" alt="Логотип интернет-магазина "Девайс"">
          </a>
-          <ul class="user-navigatoin">
+          <ul class="user-navigation">
             <li><a class="login-link" href="#">Вход</a></li>
             <li><a class="contrast-link" href="#">Сравнение</a></li>
             <li><a class="basket-link" href="#">Корзина</a></li>
@@ -128,6 +110,33 @@
         </p>
       </div>
     </footer>
+    <section class="modal modal-map">
+     <h2 class="visually-hidden">Как проехать</h2>
+      <p>
+      <img src="img/map.jpg" width="50%" height="" alt="Офис компании по адресу ул. Строителей, 15, Москва">
+      </p>
+      <button class="modal-close" type="button">
+     </section>
 
+      <section class="modal modal-feedback">
+       <h3 class="visually-hidden">Обратная связь</h3>
+        <p class="appointment-info">Напишите нам</p>
+         <form class="feedback-form" action="#" method="post">
+          <p class="appointment-item">
+           <label for="feedback-name">Ваше имя:</label>
+           <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="feedback-item">
+           <label for="feedback-email">Ваш email</label>
+           <input id="feedback-email" type="email" name="email" value="" placeholder="email@example.com">
+          </p>
+          <p class="feedback-item">
+           <label for="feedback-text">Текст письма</label>
+           <input id="feedback-text" type="text" name="text" value="" placeholder="В свободной форме">
+          </p>
+         <button class="button" type="submit">Отправить</button>
+        </form>
+       <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
