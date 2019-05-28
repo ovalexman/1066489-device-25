@@ -39,16 +39,16 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "OpenSans", "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 800;
   color: #000000;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 
   background-color: #ffffff;
-  background-image: url("../img/Layer2.png");
-  background-position: center 40px;
+  background-position: top center;
   background-repeat: no-repeat;
 }
 
@@ -57,15 +57,14 @@ a {
 }
 
 .main-navigation {
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
+  background-color: #f7e296;
 
   }
 
   .site-navigation,
   .user-navigation,
-  .products-group {
+  .products-group,
+  .service-navigation {
     list-style: none;
   }
 
@@ -75,20 +74,108 @@ a {
   }
 
   .user-navigation a {
+    font-family: "OpenSans" ;
     font-size: 15px;
-    line-height: 30px
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
   }
 
-  h3 {
+
+  .about,
+  .contacts,
+  .service {
     font-size: 47px;
     line-height: 48px;
-    color: #000000;
-
-    background-color: #ffffff;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
   }
 
-  footer {
-    background-image: url("../img/Layer3.png");
+  a {
+    color: #000000;
+  }
+
+.service {
+  font-family: "OpenSans" ;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  text-transform: none ;
+}
+
+.partners {
+  text-transform: none ;
+  letter-spacing: 0;
+
+}
+.button,
+{
+  background-color: #f7e296;
+  background-size: 260px 8px;
+}
+
+  .main-footer {
+    background-color: #464646;
     background-position: center bottom;
     background-repeat: no-repeat;
+  }
+  .user-navigation {
+    font-family: "OpenSans" ;
+    font-size: 15px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    text-transform: none;
+  }
+
+.service-navigation {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+}
+
+.address,
+.phone {
+  font-family: "OpenSans";
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  text-transform: none ;
+}
+legend {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+}
+
+.good-name {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+
+}
+
+.good-price {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: none;
+}
+
+
+  .modal-map,
+  .feedback-form {
+    display: none;
   }
